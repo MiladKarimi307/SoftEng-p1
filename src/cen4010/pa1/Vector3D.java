@@ -20,7 +20,7 @@ public final class Vector3D {
 		return new Vector3D(this.x + v.x, this.y + v.y, this.z + v.z);
 	}
 
-	public Vector3D dubtract(Vector3D v) {
+	public Vector3D subtract(Vector3D v) {
 		return new Vector3D(this.x - v.x, this.y - v.y, this.z - v.z);
 	}
 
