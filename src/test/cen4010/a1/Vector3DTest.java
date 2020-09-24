@@ -55,4 +55,10 @@ class Vector3DTest {
 		assertEquals(true, result.equals(new Vector3D(3,1.5,10.5)));
 	}
 
+	@Test
+	void testNegate() {
+		Vector3D vector=new Vector3D(4.2,8.1,3.7);
+		Vector3D result = vector.negate();
+		assertEquals(true, result.equals(new Vector3D(-4.2,-8.1,-3.7)));
+	}
 }
