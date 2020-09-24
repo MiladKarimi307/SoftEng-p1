@@ -61,4 +61,12 @@ class Vector3DTest {
 		Vector3D result = vector.negate();
 		assertEquals(true, result.equals(new Vector3D(-4.2,-8.1,-3.7)));
 	}
+	
+	@Test
+	void testDot() {
+		Vector3D vector = new Vector3D(2,3,6);
+		Vector3D vector2 = new Vector3D(1,4,7);
+		double result = vector.dot(vector2);
+		assertEquals(result,56);
+	}
 }
